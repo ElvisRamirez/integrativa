@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+<h3>{{ number }}</h3>
+
+<img [src]="imagenUrl" alt="usuario" width="500 px">
+
+<br>
+
+<button type="button" (click)="onClick()">Clickeate</button>
+
+<br><br>
+
+<form action="">
+
+    <input type="text" placeholder="Ingrese nombre" name="nombre" [(ngModel)]="towWayDataBinding">
+    <br><br>
+    <input type="text" placeholder="Duplicación" name="nombreD" [(ngModel)]="towWayDataBinding">
+
+</form>

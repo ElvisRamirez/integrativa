@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- activida.component.html -->
+<div class="container">
+    <h2 class="text-center">{{ titulo }}</h2>
+    <img [src]="imageUrl" class="img mx-auto d-block" alt="Image" style="max-width: 300px;">
+    
+    <div class="form-group">
+      <label for="inputField">Input Field:</label>
+      <input type="Itext" class="form-control" id="inputField" (input)="onInputChange($event)" placeholder="Enter something">
+      <p>You typed: {{ inputValue }}</p>
+    </div>
+  
+    <!-- Checkbox para seleccionar si es estudiante o maestro con íconos de Font Awesome -->
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="estudiante" [(ngModel)]="isEstudiante">
+      <label class="form-check-label" for="estudiante">
+        <i class="fas fa-user-graduate"></i> Estudiante
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="maestro" [(ngModel)]="isMaestro">
+      <label class="form-check-label" for="maestro">
+        <i class="fas fa-chalkboard-teacher"></i> Maestro
+      </label>
+    </div>
+    <!-- <p>Estudiante: {{ isEstudiante }}</p>
+    <p>Maestro: {{ isMaestro }}</p> -->
+  </div>
+  
+  
+  
+</body>
+</html>
